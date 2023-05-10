@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('vendor/reset.css');
+@import url('components/header.css');
+@import url('components/index.css');
+@import url('components/new.css');
+@import url('components/edit.css');
+@import url('components/item.css');
+@import url('components/abc.css');

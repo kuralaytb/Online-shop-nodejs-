@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') -%>
+
+</head>
+<body>
+    <%- include('header') -%>
+    <div class="container">
+        <h4>Редактирование товара</h4>
+     <form action="/edit" method="POST">
+        <input type="hidden" value="<%= data._id%>" name="id">
+        <input type="text" value="<%= data.title%>" name="title" class="form-control" placeholder="Название продукта">
+        <input type="text" value="<%= data.cost%>" name="cost" class="form-control" placeholder="Цена">
+        <input type="number" value="<%= data.discount%>" name="discount" class="form-control" placeholder="Скидка">
+        <input type="url" value="<%= data.url%>" name="url" class="form-control" placeholder="URL картинки">
+        <button type="submit" class="btn-add wide">Сохранить изменения</button>
+     </form>
+    </div>
+    
+</body>
+</html>

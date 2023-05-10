@@ -1,0 +1,105 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.btn-add{
+    background: #FE6769;
+    border-radius: 15px;
+    color:#fff;
+    font-weight: 700;
+    border: none;
+    padding: 0.8rem;
+}
+.btn-add i{
+    color:#fff;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:3%;
+}
+.products-item{
+    width:calc(25% - 1rem);
+    background: #EDEDED;
+    border-radius: 15px;
+    padding:3%;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.products-image>img{
+    width: 100%;
+}
+.product-title{
+    font-weight: 700;
+    line-height: 19.4px;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.favorites{
+    position: absolute;
+    right: 6%;
+    top: 6%;
+    font-size: 23px;
+}
+.discount{
+    position: absolute;
+    background-color: #FE6769;
+    left: 6%;
+    top: 6%;
+    color:#fff;
+    font-weight: 700;
+    padding:2%;
+}
+.btn-additional{
+    position: absolute;
+    border: none;
+    right: 6%;
+    bottom: 6%;
+}
+.btn-plus{
+    position: absolute;
+    width:2rem;
+    height:2rem;
+    border-radius: 50%;
+    background: #FE6769;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    font-size: 23px;
+    left:40%;
+    bottom:-7%;
+}
+.btn-plus i{
+    color:#fff;
+}
+.btn-group{
+    flex-direction: column;
+    position: absolute;
+    right:1%;
+    bottom:-13%;
+    z-index: 100;
+    display: none;
+}
+.open-options{
+    display: flex !important;
+}
+.btn-edit{
+    padding:0.6rem 1rem;
+    background: #F8F8F8;
+    border: none;
+    font-weight: 700;
+}
+.btn-delete{
+    padding:0.6rem 1rem;
+    background: #FD0000;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+}

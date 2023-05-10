@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('head') -%>
+</head>
+<body>
+    <%- include ('header') -%>
+    <div class="container">
+        <div class="main">
+            <h3>Chairs</h3>
+            <a href="http://localhost:8000/new">
+                <button type="button" class="btn-add">
+                    <i class="fa-solid fa-plus"></i>
+                    Добавить продукт
+                </button>
+            </a>
+        </div>
+        <div class="products">
+            <% 
+            data.forEach(item =>{
+            %> 
+            <div class="products-item">
+                <a href="http://localhost:8000/item/<%=item._id%>">
+                    <div class="products-image">
+                        <img src="<%=item.url %>" alt="chairs">
+                    </div>
+                </a>
+                    <p class="product-title"><%=item.title %></p>
+                    <p class="product-title"><%=item.cost %></p>
+                    <div class="favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="discount"><%=item.discount %>%</span>
+                    <button class="btn-additional" onclick="openOptions(this)">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                    <div class="btn-plus">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="btn-group">
+                        <a href="http://localhost:8000/edit/<%=item._id%>">
+                            <button class="btn-edit">Редактировать</button>
+                        </a>
+                        <button class="btn-delete" onclick="deleteItem('<%= item._id%>')">Удалить</button>
+                    </div>
+            </div>
+        <%
+            })
+        %>
+        </div>
+    </div>
+
+    <script src="scripts/edit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js" integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/delete.js"></script>
+</body>
+</html>

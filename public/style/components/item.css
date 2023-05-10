@@ -1,0 +1,19 @@
+.item{
+    display: flex;
+    position: relative;
+}
+.item-info{
+    margin-left: 4rem;
+}
+.btn-additional.options{
+    background: #fff;
+    position: absolute;
+    right: 0%;
+    bottom:100%;
+}
+.btn-group.option{
+    top:5%;
+}
+.open-options{
+    display: flex !important;
+}

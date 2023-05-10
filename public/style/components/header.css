@@ -1,0 +1,18 @@
+.navbar> .container{
+    justify-content:flex-start;
+}
+.navbar-brand{
+    margin-right: 10%;
+}
+.input-group>span, .form-control{
+    background-color: #F5F5F5;
+    font-size: 18px;
+    color: #777C82;
+    border-radius: 15px;
+}
+.input-group> span i{
+    color:#777C82;
+}
+.form-control{
+    border-left: none;
+}
